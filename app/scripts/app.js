@@ -19,11 +19,13 @@ angular
   ])
   .config(function ($routeProvider) {
     $routeProvider
-      .when('/', {
-
+      .when('/search/artist/:query', {
+        templateUrl: 'scripts//views/artistsearch.html',
+        controller: 'ArtistSearchController'
       })
-      .when('/about', {
-
+      .when('/search/album/:query', {
+        templateUrl: 'scripts/views/albumsearch.html',
+        controller: 'AlbumSearchController'
       })
       .otherwise({
         redirectTo: '/'
