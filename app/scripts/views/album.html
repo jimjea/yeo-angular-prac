@@ -4,6 +4,10 @@
 
   <h1>{{results.name}}</h1>
 
+  <audio media-player="player" controls data-playlist="playlist">
+      <source src="" type="audio/ogg">
+  </audio>
+
   <h2 ng-repeat="artist in results.artists">
     <a href = "/#artist/{{ artist.id }}" > {{ artist.name }} </a>
   </h2>
@@ -15,7 +19,7 @@
     </tr>
     <tr ng-repeat="track in results.tracks.items" id="track-number-{{ track.track_number }}">
       <td>{{ track.track_number }}</td>
-      <td><a class="track">{{ track.name }}</a>
+      <td><a class="track" ng-click="playTrack(track.preview_url)">{{ track.name }}</a>
       </td>
 
     </tr>

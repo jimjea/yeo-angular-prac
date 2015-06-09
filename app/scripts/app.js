@@ -27,7 +27,7 @@ angular
         templateUrl: 'scripts/views/albumsearch.html',
         controller: 'AlbumSearchController'
       })
-      .when('#album/albumid', {
+      .when('/album/:albumId', {
         templateUrl: 'scripts/views/album.html',
         controller: 'AlbumController'
       })
