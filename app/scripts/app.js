@@ -27,6 +27,10 @@ angular
         templateUrl: 'scripts/views/albumsearch.html',
         controller: 'AlbumSearchController'
       })
+      .when('#album/albumid', {
+        templateUrl: 'scripts/views/album.html',
+        controller: 'AlbumController'
+      })
       .otherwise({
         redirectTo: '/'
       });
