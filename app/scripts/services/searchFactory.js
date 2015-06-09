@@ -1,3 +1,5 @@
+'use strict';
+
 angular.module('SpotSearchAngularApp')
 
 .factory('searchFactory', ['$http', function($http) {

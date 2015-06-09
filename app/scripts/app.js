@@ -9,7 +9,7 @@
  * Main module of the application.
  */
 angular
-  .module('spotSearchApp', [
+  .module('SpotSearchAngularApp', [
     'ngAnimate',
     'ngCookies',
     'ngResource',
